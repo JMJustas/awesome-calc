@@ -11,6 +11,9 @@ function main() {
 		case '+':
 			console.log(sum(operand1, operand2));
 			break;
+        case '-':
+            console.log((operand1 - operand2));
+            break;
 		default:
 			console.error(`Operation ${operation} is not supported`);
 			process.exit(1);
