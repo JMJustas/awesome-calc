@@ -2,6 +2,10 @@ function sum(a, b) {
 	return a + b;
 }
 
+function sub(a, b) {
+    return a - b;
+}
+
 function main() {
 	const operand1 = parseInt(process.argv[2]);
 	const operation = process.argv[3];
@@ -11,6 +15,9 @@ function main() {
 		case '+':
 			console.log(sum(operand1, operand2));
 			break;
+        case '-':
+            console.log(sub(operand1, operand2));
+            break;
 		default:
 			console.error(`Operation ${operation} is not supported`);
 			process.exit(1);
